@@ -195,3 +195,66 @@
     -webkit-transition: background-position .7s;
     transition: background-position .7s;
   }
+
+  /* Base styles (default for larger screens) */
+.starability-result {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background-size: contain;
+  font-size: 0.1em;
+  color: transparent;
+}
+
+/* Media Queries */
+
+/* Small screens (mobile) */
+@media screen and (max-width: 480px) {
+  .starability-result {
+      width: 100px;
+      height: 20px;
+  }
+  .starability-slot {
+      width: 100px;
+      min-height: 40px;
+  }
+  .starability-slot > label {
+      width: 20px;
+      height: 20px;
+      background-size: 20px auto;
+  }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 768px) {
+  .starability-result {
+      width: 120px;
+      height: 25px;
+  }
+  .starability-slot {
+      width: 120px;
+      min-height: 50px;
+  }
+  .starability-slot > label {
+      width: 25px;
+      height: 25px;
+      background-size: 25px auto;
+  }
+}
+
+/* Large screens (default) */
+@media screen and (min-width: 1024px) {
+  .starability-result {
+      width: 150px;
+      height: 30px;
+  }
+  .starability-slot {
+      width: 150px;
+      min-height: 60px;
+  }
+  .starability-slot > label {
+      width: 30px;
+      height: 30px;
+      background-size: 30px auto;
+  }
+}

@@ -42,6 +42,7 @@ main().then(()=> {
 async function main()
 {
     await mongoose.connect(dbUrl);
+    console.log("database connected");
 };
 
 const store=MongoStore.create({
